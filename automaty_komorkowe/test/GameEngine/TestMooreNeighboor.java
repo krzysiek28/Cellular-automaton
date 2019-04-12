@@ -3,6 +3,9 @@ package GameEngine;
 import java.util.HashSet;
 import java.util.Set;
 
+import cell.coordinates.CellCoordinates;
+import cell.coordinates.Coords2D;
+import neighbours.MooreNeighborhood;
 import org.junit.Test;
 
 import junit.framework.Assert;
@@ -13,7 +16,7 @@ public class TestMooreNeighboor {
 	@Test
 	public void mooreNeighboorTest() {
 		int width = 6, height = 5;
-		MooreNeighborhood proNeighs = new MooreNeighborhood(1, false, width, height); 
+		MooreNeighborhood proNeighs = new MooreNeighborhood(1, false, width, height);
 		Set<CellCoordinates> retNeighs = proNeighs.cellNeighbors(new Coords2D(2,0));
 		
 		//tworze zbiór s¹siadów

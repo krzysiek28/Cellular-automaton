@@ -3,8 +3,16 @@ package GameEngine;
 import java.util.HashMap;
 import java.util.Map;
 
+import automaton.Automaton;
+import cell.coordinates.CellCoordinates;
+import cell.coordinates.Coords1D;
+import cell.states.BinaryState;
+import cell.states.CellState;
+import cell.states.UniformStateFactory;
+import games.Rule256;
 import junit.framework.Assert;
 
+import neighbours.Neighborhood1D;
 import org.junit.Test;
 
 @SuppressWarnings("deprecation")

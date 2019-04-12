@@ -5,6 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import automaton.Automaton;
+import cell.coordinates.CellCoordinates;
+import cell.coordinates.Coords2D;
+import cell.states.BinaryState;
+import cell.states.CellState;
+import cell.states.UniformStateFactory;
+import games.GameOfLife;
+import neighbours.MooreNeighborhood;
 import org.junit.Test;
 
 import junit.framework.Assert;

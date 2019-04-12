@@ -3,8 +3,11 @@ package GameEngine;
 import java.util.HashSet;
 import java.util.Set;
 
+import cell.coordinates.CellCoordinates;
+import cell.coordinates.Coords2D;
 import junit.framework.Assert;
 
+import neighbours.VonNeumanNeighborhood;
 import org.junit.Test;
 
 @SuppressWarnings("deprecation")
@@ -13,7 +16,7 @@ public class TestVonNeumanNeighboor {
 	@Test
 	public void VonNeumanNeighboorTest() {
 		int width = 6, height = 5;
-		VonNeumanNeighborhood proNeighs = new VonNeumanNeighborhood(1, false, width, height); 
+		VonNeumanNeighborhood proNeighs = new VonNeumanNeighborhood(1, false, width, height);
 		Set<CellCoordinates> retNeighs = proNeighs.cellNeighbors(new Coords2D(2,0));
 		
 		

@@ -3,8 +3,11 @@ package GameEngine;
 import java.util.HashSet;
 import java.util.Set;
 
+import cell.coordinates.CellCoordinates;
+import cell.coordinates.Coords1D;
 import junit.framework.Assert;
 
+import neighbours.Neighborhood1D;
 import org.junit.Test;
 
 @SuppressWarnings("deprecation")
@@ -13,7 +16,7 @@ public class TestNeighborhood1D {
 	@Test
 	public void Neighborhood1Dtest() {
 		int size = 10;
-		Neighborhood1D proNeighs = new Neighborhood1D(size); 
+		Neighborhood1D proNeighs = new Neighborhood1D(size);
 		Set<CellCoordinates> retNeighs = proNeighs.cellNeighbors(new Coords1D(3));
 		
 		//tworze zbiór s¹siadów
